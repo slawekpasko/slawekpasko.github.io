@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pl" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sławek Pasko – Rapid AI, Python, Web Scraping, Trading Bots & Web Automation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {}
+      }
+    }
+    function toggleLang() {
+      const pl = document.querySelectorAll('.lang-pl');
+      const en = document.querySelectorAll('.lang-en');
+      pl.forEach(el => el.classList.toggle('hidden'));
+      en.forEach(el => el.classList.toggle('hidden'));
+    }
+  </script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans transition-colors duration-300">
+  <!-- Header -->
+  <header class="flex justify-between items-center p-6 bg-gray-800">
+    <h1 class="text-2xl font-bold">Sławek Pasko</h1>
+    <button onclick="toggleLang()" class="px-4 py-2 bg-indigo-600 rounded hover:bg-indigo-500 transition">
+      <span class="lang-pl">EN / PL</span>
+      <span class="lang-en hidden">PL / EN</span>
+    </button>
+  </header>
+
+  <!-- Hero -->
+  <section class="text-center py-20 bg-gray-800">
+    <h2 class="text-4xl md:text-5xl font-extrabold mb-6">
+      <span class="lang-pl">Szybkie Skrypty Python, Boty Handlowe, Automatyzacje AI i Strony WWW w 1-3 Godziny</span>
+      <span class="lang-en hidden">Rapid Python, AI & Web Automation in 1-3 Hours</span>
+    </h2>
+    <a href="https://github.com/slawekpasko/slawekpasko.github.io/issues/new?title=Zlecenie+IT+%2F+Custom+Order&body=Opisz+czego+potrzebujesz+%28Describe+your+task%29%3A%0A-%20Bud%C5%BCet+%28Budget%29%3A%20%0A-%20Kontakt+%28Email%2FTelegram%29%3A%20"
+       class="inline-block mt-4 px-8 py-3 bg-indigo-600 hover:bg-indigo-500 rounded text-lg font-medium transition">
+      <span class="lang-pl">Zamów Zlecenie Teraz (GitHub Ticket)</span>
+      <span class="lang-en hidden">Order a Task Now</span>
+    </a>
+  </section>
+
+  <!-- Pricing -->
+  <section class="py-16 bg-gray-900">
+    <h3 class="text-3xl font-bold text-center mb-12">
+      <span class="lang-pl">Transparentne Cenniki</span>
+      <span class="lang-en hidden">Transparent Pricing</span>
+    </h3>
+    <div class="max-w-6xl mx-auto grid gap-8 md:grid-cols-3">
+      <!-- Pakiet Szybki Skrypt -->
+      <div class="bg-gray-800 rounded-lg p-6 border border-gray-700">
+        <h4 class="text-xl font-semibold mb-4">Pakiet Szybki Skrypt / Bugfix</h4>
+        <p class="mb-2"><strong>50–100 PLN / $15–$25 USDT</strong></p>
+        <ul class="list-disc list-inside mb-4">
+          <li>Python automation</li>
+          <li>CSV/JSON/Excel processing</li>
+          <li>Bash hook</li>
+          <li>Bugfix in 1h</li>
+        </ul>
+        <p class="text-sm text-gray-400 mb-2"><span class="lang-pl">Płatność po wykonaniu</span><span class="lang-en hidden">Pay on Delivery</span> (USDT, USDC, BTC, BLIK, Revolut)</p>
+      </div>
+      <!-- Pakiet Scraper -->
+      <div class="bg-gray-800 rounded-lg p-6 border border-gray-700">
+        <h4 class="text-xl font-semibold mb-4">Pakiet Scraper / Bot Telegram & Discord / Integracja API</h4>
+        <p class="mb-2"><strong>150–300 PLN / $35–$75 USDT</strong></p>
+        <ul class="list-disc list-inside mb-4">
+          <li>Live web scraper</li>
+          <li>Notifications bot</li>
+          <li>REST API integration</li>
+        </ul>
+        <p class="text-sm text-gray-400 mb-2"><span class="lang-pl">Płatność po wykonaniu</span><span class="lang-en hidden">Pay on Delivery</span> (USDT, USDC, BTC, BLIK, Revolut)</p>
+      </div>
+      <!-- Pakiet Algorytmiczny Bot Krypto -->
+      <div class="bg-gray-800 rounded-lg p-6 border border-gray-700">
+        <h4 class="text-xl font-semibold mb-4">Pakiet Algorytmiczny Bot Krypto / Dashboard Webowy / SaaS MVP</h4>
+        <p class="mb-2"><strong>400–1000 PLN / $100–$250 USDT</strong></p>
+        <ul class="list-disc list-inside mb-4">
+          <li>Custom Binance/Bybit bot</li>
+          <li>Next.js + SQLite app</li>
+          <li>Interactive dashboard</li>
+        </ul>
+        <p class="text-sm text-gray-400 mb-2"><span class="lang-pl">Płatność po wykonaniu</span><span class="lang-en hidden">Pay on Delivery</span> (USDT, USDC, BTC, BLIK, Revolut)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="py-16 bg-gray-800">
+    <h3 class="text-3xl font-bold text-center mb-12">
+      <span class="lang-pl">Portfolio</span>
+      <span class="lang-en hidden">Live Portfolio Showcase</span>
+    </h3>
+    <div class="max-w-5xl mx-auto grid gap-6 md:grid-cols-2">
+      <a href="https://github.com/slawekpasko/claude-review" target="_blank" class="block p-4 bg-gray-900 rounded hover:bg-gray-700 transition">
+        <h4 class="font-semibold mb-2">claude-review – CLI & GitHub Action PR Reviewer Agent</h4>
+        <p class="text-sm text-gray-400">Automatyczna recenzja PR‑ów z Claude.</p>
+      </a>
+      <a href="https://github.com/slawekpasko/block-destructive-bash" target="_blank" class="block p-4 bg-gray-900 rounded hover:bg-gray-700 transition">
+        <h4 class="font-semibold mb-2">block-destructive-bash – Pre‑Tool‑Use Security Hook</h4>
+        <p class="text-sm text-gray-400">Zapobiega niebezpiecznym komendom Bash.</p>
+      </a>
+      <a href="https://github.com/slawekpasko/nextjs-saas-template" target="_blank" class="block p-4 bg-gray-900 rounded hover:bg-gray-700 transition">
+        <h4 class="font-semibold mb-2">Next.js 15 + SQLite Production SaaS Architecture Template</h4>
+        <p class="text-sm text-gray-400">Gotowy szkielet SaaS.</p>
+      </a>
+      <a href="https://github.com/slawekpasko/btc-autonomous-worker" target="_blank" class="block p-4 bg-gray-900 rounded hover:bg-gray-700 transition">
+        <h4 class="font-semibold mb-2">Autonomous BTC/USDT Algorithmic Trading Worker & Live Dashboard</h4>
+        <p class="text-sm text-gray-400">Bot handlowy z dashboardem w czasie rzeczywistym.</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="py-20 bg-gray-900">
+    <h3 class="text-3xl font-bold text-center mb-12">
+      <span class="lang-pl">Jak to działa?</span>
+      <span class="lang-en hidden">How It Works</span>
+    </h3>
+    <div class="max-w-4xl mx-auto grid gap-8 md:grid-cols-3 text-center">
+      <div class="bg-gray-800 p-6 rounded">
+        <div class="text-4xl mb-4">①</div>
+        <p class="font-medium"><span class="lang-pl">Klikasz "Zamów Zlecenie" i opisujesz problem</span><span class="lang-en hidden">Click "Order a Task" and describe your need</span></p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded">
+        <div class="text-4xl mb-4">②</div>
+        <p class="font-medium"><span class="lang-pl">Otrzymujesz działające demo/kod w 1‑3h</span><span class="lang-en hidden">Receive a working demo/code in 1‑3h</span></p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded">
+        <div class="text-4xl mb-4">③</div>
+        <p class="font-medium"><span class="lang-pl">Płacisz po weryfikacji w USDT/USDC/BTC/BLIK</span><span class="lang-en hidden">Pay after verification via USDT/USDC/BTC/BLIK</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 bg-gray-800 text-center text-sm text-gray-400">
+    © 2024 Sławek Pasko – All rights reserved.
+  </footer>
+</body>
+</html>
